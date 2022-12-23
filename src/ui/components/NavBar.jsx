@@ -20,6 +20,22 @@ export const NavBar = () => {
         >
           DC
         </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            `nav-item ${isActive ? 'is-active' : ''}`
+          }
+          to="heroe"
+        >
+          Heroe
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            `nav-item ${isActive ? 'is-active' : ''}`
+          }
+          to="search"
+        >
+          Search
+        </NavLink>
       </div>
       <button className="logout-button">Logout</button>
     </div>
