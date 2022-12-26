@@ -51,15 +51,30 @@ ul > li {
 .logout-button {
   height: 50px;
   width: 80px;
+  font-size: 16px;
   background: transparent;
   color: var(--white-color);
-  border: 1px solid var(--white-color);
+  border: 1px solid blue;
   cursor: pointer;
+  transition: 0.3s ease-in;
 }
 .logout-button:hover {
-  background: var(--main-gradient);
+  background: blue;
+}
+.login-button {
+  height: 50px;
+  width: 80px;
+  font-size: 16px;
+  background: transparent;
+  color: var(--white-color);
+  border: 1px solid blue;
+  cursor: pointer;
+  transition: 0.3s ease-in;
 }
 .is-active {
-  color: aqua;
+  color: red;
   font-weight: 600;
+}
+.hero-card-container {
+  
 }
