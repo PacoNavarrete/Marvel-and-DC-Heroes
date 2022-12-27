@@ -1,10 +1,10 @@
-import { HeroeFiltered } from '../components/HeroeFiltered';
+import { HeroesGrid } from '../components/HeroesGrid';
 
 export const DCPage = () => {
   return (
     <>
       <h1>DC Page</h1>
-      <HeroeFiltered publisher="DC Comics" />
+      <HeroesGrid publisher="DC Comics" />
     </>
   );
 };
