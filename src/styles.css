@@ -1,5 +1,6 @@
 :root {
   --white-color: #fff;
+  --blue-color: #0000ff;
   --main-background: #10011d;
   --sencondary-backgraund: rgba(82, 82, 82, 0.432);
   --main-gradient: linear-gradient(
@@ -26,9 +27,13 @@ h1 {
   letter-spacing: 3px;
   font-weight: 200;
   font-size: 60px;
+  margin: 30px;
 }
 ul > li {
   list-style: none;
+}
+a {
+  text-decoration: none;
 }
 .nav-bar {
   margin: 0 auto;
@@ -52,11 +57,13 @@ ul > li {
   height: 50px;
   width: 80px;
   font-size: 16px;
+  font-weight: 600;
   background: transparent;
   color: var(--white-color);
-  border: 1px solid blue;
+  border: 1px solid #0000ff;
   cursor: pointer;
   transition: 0.3s ease-in;
+  border-radius: 5px;
 }
 .logout-button:hover {
   background: blue;
@@ -64,17 +71,22 @@ ul > li {
 .login-button {
   height: 50px;
   width: 80px;
+  font-weight: 600;
   font-size: 16px;
-  background: transparent;
+  background: blue;
   color: var(--white-color);
   border: 1px solid blue;
   cursor: pointer;
   transition: 0.3s ease-in;
+  border-radius: 5px;
 }
 .is-active {
-  color: red;
+  color: blue;
   font-weight: 600;
 }
-.hero-card-container {
-  
+.link-to-hero-container {
+  transition: 0.3s ease-in;
+}
+.link-to-hero-container:hover {
+  border: 2px solid #10011d;
 }
