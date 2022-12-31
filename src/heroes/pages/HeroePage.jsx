@@ -19,7 +19,11 @@ export const HeroePage = () => {
     <div className="card mb-5 mt-5 bg-dark animate__animated animate__fadeInDown">
       <div className="row g-0">
         <div className="col-md-4">
-          <img src={heroe.url} className="img-fluid rounded-start" alt={heroe.id} />
+          <img
+            src={heroe.url}
+            className="img-fluid rounded-start"
+            alt={heroe.id}
+          />
         </div>
         <div className="col-md-8">
           <div className="card-body">
