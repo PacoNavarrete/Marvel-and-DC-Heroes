@@ -3,11 +3,12 @@ import { useContext } from 'react';
 import { AuthContext } from '../../auth/context/AuthContext';
 
 export const NavBar = () => {
-  const { authState } = useContext(AuthContext);
+  const { authState, logout } = useContext(AuthContext);
   const { user } = authState;
 
   const navigate = useNavigate();
   const onLogout = () => {
+    logout();
     navigate('/login', {
       replace: true,
     });
@@ -42,7 +43,7 @@ export const NavBar = () => {
         </NavLink>
       </div>
       <div>
-        <p>user logged: {user || 'No'}</p>
+        <p>user logged: {user?.name || 'Not logged'}</p>
       </div>
       <button className="logout-button" onClick={onLogout}>
         Logout

@@ -1,14 +1,13 @@
 import { useNavigate } from 'react-router-dom';
-import {useContext} from 'react'
+import { useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
 
 export const LoginPage = () => {
   const navigate = useNavigate();
-  const {authState, login} = useContext(AuthContext)
+  const { login } = useContext(AuthContext);
 
   const onLogin = () => {
-    
-    login('Francisco Cienfuegos')
+    login('Francisco Cienfuegos');
 
     navigate('/', {
       replace: true,
@@ -18,7 +17,9 @@ export const LoginPage = () => {
   return (
     <>
       <h1>Login Page</h1>
-      <button className='login-button' onClick={onLogin}>Login ➡</button>
+      <button className="login-button" onClick={onLogin}>
+        Login ➡
+      </button>
     </>
   );
 };
