@@ -9,7 +9,9 @@ export const LoginPage = () => {
   const onLogin = () => {
     login('Francisco Cienfuegos');
 
-    navigate('/', {
+    const pathname = localStorage.getItem('pathname') || '/';
+
+    navigate(pathname, {
       replace: true,
     });
   };
